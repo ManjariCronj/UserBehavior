@@ -1,0 +1,2 @@
+include ':google_play_services'
+include ':smart_Navi'

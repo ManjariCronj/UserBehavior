@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical" >
+    <LinearLayout
+            android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_marginTop="10dp"
+    		android:orientation="vertical">
+    		    		<TextView
+    		            	android:layout_marginTop="10dp"
+    		            	android:layout_marginBottom="10dp"
+    		    android:id="@+id/textView1"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"    		    
+    		    android:text="Destination"
+    		    android:layout_gravity="center"
+    		    android:textAppearance="?android:attr/textAppearanceLarge" 
+    		    />
+    		<EditText
+    		            	android:layout_marginTop="10dp"
+    		            	android:layout_marginBottom="10dp"
+    		    android:id="@+id/ETDestination"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    		    android:hint="Enter your Destinations"
+    		     />        
+    <RadioGroup
+        android:id="@+id/radioType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioWalking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:checked="true"
+            android:text="Walking"  />
+ 
+        <RadioButton
+            android:id="@+id/radioDriving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driving" />
+ 
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service" />
+        		
+     </LinearLayout>
+</ScrollView>
